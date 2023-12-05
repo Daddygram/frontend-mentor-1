@@ -1,0 +1,139 @@
+@font-face {
+    font-family: WorkSans;
+    src: url("assets/fonts/WorkSans-VariableFont_wght.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: WorkSans;
+    src: url("assets/fonts/WorkSans-italic-VariableFont_wght.ttf") format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    display: swap;
+}
+@font-face {
+    font-family: WorkSans;
+    src: url("assets/fonts/static/WorkSans-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    display: swap;
+}
+@font-face {
+    font-family: WorkSans;
+    src: url("assets/fonts/static/WorkSans-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: WorkSans;
+    background: url("/assets/images/background-pattern-desktop.svg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%)
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 10px;
+}
+
+p {
+    width: calc(100% - 20px);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    background-image: url(/assets/images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+}
+
+.card {
+    width: 500px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.line{
+    margin: 20px;
+    align-self: center;
+    width: 90%;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+
+.popup {
+    margin: 20px 0;
+    line-height: 1.5rem;
+    display: none;
+    color: hsl(292, 16%, 49%);
+}
+
+.popup.open {
+    display: block;
+}
+
+.openbar {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    background: url(/assets/images/icon-plus.svg);
+    background-size: cover;
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.btn.open {
+    background: url(/assets/images/icon-minus.svg);
+    transition: 0.3s ease;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin-top: 20px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 720px) {
+    body {
+        background: url(/assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-color: hsl(275, 100%, 97%)
+    }
+}
